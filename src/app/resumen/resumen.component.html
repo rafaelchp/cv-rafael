@@ -1,0 +1,130 @@
+  <section class="content" id="about">
+      <div class="block-content">
+          <h3 class="block-title">Perfil</h3>
+          <h3 class="subheading">¡Hola! soy Rafael Chica <strong>Analista De Software & Programador BackEnd/FrontEnd</strong></h3>
+          <p>Web con mas de 1 año de experiencia en desarrollo front end y back end. Trayectoria en tecnologías como Angular, NodeJs, Express y últimamente con NetCore, experiencia en manejo de ORMs.
+             Fuertes antecedentes en gestión y liderazgo.</p>
+          <div class="info-list row">
+              <div class="col-sm-6"><span>Nombre : </span> Rafael Chica</div>
+
+              <div class="col-sm-6"><span>Dirección : </span> Florida, Valle del Cauca- Colombia.</div>
+              <div class="col-sm-6"><span>Email : </span> rrchica@misena.edu.co</div>
+              <div class="col-sm-6"><span>Telefono : </span> + 57 312 868 9853</div>
+              <div class="col-sm-6"><span>Interes : </span> Frelance, Full-Time</div>
+          </div>
+      </div>
+      <!-- <div class="block-content">
+          <h3 class="block-title">Profesional</h3>
+          <div *ngFor="let profex of cv.profesional">
+            <h4>Especialidad: <label class="progress-bar-label"> {{ profex.Especialidad }}</label></h4>
+
+            <div class="progress">
+                <div [style.width.%]=profex.Empresa class="progress-bar-label" role="progressbar" attr.aria-valuenow="{{ profex.Empresa }}" aria-valuemin="0" aria-valuemax="100">
+                  <h4>Empresa: <span>{{ profex.Empresa }} </span></h4>
+
+                </div>
+            </div>
+        </div>
+      </div> -->
+      <div class="block-content">
+          <h3 class="block-title">Experiencia</h3>
+          <div class="timeline experience">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="exp-holder">
+                          <div *ngFor="let expex of cv.experiencia">
+                            <div class="exp">
+                                <div class="hgroup">
+                                    <h4><span>{{ expex.Empresa }}</span> - {{ expex.Cargo }}</h4>
+                                    <h5> {{ expex.Fecha }} </h5>
+                                </div>
+                                <p>{{ expex.Descripcion }}</p>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="block-content">
+          <h3 class="block-title">Educación</h3>
+          <div class="timeline education">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="exp-holder">
+                        <div *ngFor="let edux of cv.educacion">
+                          <div class="exp">
+                              <div class="hgroup">
+                                  <h4>{{ edux.Nombre }} |<div> </div> <a href="{{ edux.Url }}" target="_blank"><span>Ver Certificado</span></a></h4>
+                                  <h5>{{ edux.Fecha }}</h5>
+
+                              </div>
+                              <h5> {{ edux.Descripcion }}</h5>
+                              <p>{{ edux.Institucion }}</p>
+
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="block-content">
+          <h3 class="block-title">Servicios</h3>
+          <div class="row">
+              <div class="col-md-4 col-sm-6 service">
+                  <div class="service-icon">
+                      <i class="ion-laptop"></i>
+                  </div>
+                  <h4>Maquetación Web</h4>
+                  <p>Manejo de Material Desing para interfaces en conjunto con Angular. Manejo de Bootstrap para interfaces con HTML</p>
+              </div>
+              <div class="col-md-4 col-sm-6 service">
+                  <div class="service-icon">
+                      <i class="ion-pie-graph"></i>
+                  </div>
+                  <h4>Desarrollo de Aplicaciones Web</h4>
+                  <p>Aplicaciones a la medida del cliente, se realiza análisis de la solicitud del cliente y se presenta propuesta.</p>
+              </div>
+
+          </div>
+      </div>
+     <!--  <div class="block-content">
+          <h3 class="block-title">Awards</h3>
+          <div class="row">
+              <div class="col-md-3 col-sm-6 awards">
+                  <img src="assets\images\awards\1.jpeg" alt="">
+              </div>
+              <div class="col-md-3 col-sm-6 awards">
+                  <img src="assets\images\awards\2.jpeg" alt="">
+              </div>
+              <div class="col-md-3 col-sm-6 awards">
+                  <img src="assets\images\awards\3.jpeg" alt="">
+              </div>
+              <div class="col-md-3 col-sm-6 awards">
+                  <img src="assets\images\awards\4.jpeg" alt="">
+              </div>
+          </div>
+      </div> -->
+      <!-- <div class="block-content">
+          <h3 class="block-title">Testimonios</h3>
+          <div class="row">
+              <div id="liontestimonial" class="owl-carousel owl-theme">
+                  <div *ngFor="let testix of cv.testimonio">
+                    <div class="item testimonials">
+                        <img src="https://www.tsitecnologia.com.co/wp-content/uploads/2020/11/LOGO-TSI-NUEVO-2020-pq-200.png" alt="">
+                        <blockquote>Descrip {{ testix.Descripcion }}
+                            <p class="quote"><span>{{ testix.Nombre }}</span> - {{ testix.Cargo }}</p>
+                        </blockquote>
+                    </div>
+                </div>
+
+              </div>
+          </div>
+      </div> -->
+      <div class="row text-center">
+          <div class="col-md-12 btn-email">
+              <a class="btn lowercase">rrchica@misena.edu.co</a>
+          </div>
+      </div>
+  </section>
